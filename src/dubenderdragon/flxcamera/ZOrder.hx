@@ -1,8 +1,8 @@
-package;
+package dubenderdragon.flxcamera;
 
 import flixel.FlxCamera;
 import flixel.FlxG;
-class CameraZOrder {
+class ZOrder {
     public static function moveOrderCamera(camera:FlxCamera, targetCamera:FlxCamera, behind:Bool = true):Void {
         if (camera == null || targetCamera == null || getCameraOrder(camera) == -1 || getCameraOrder(targetCamera) == -1) return;
         if (behind) {
